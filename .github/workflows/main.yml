@@ -1,5 +1,5 @@
 name: CI
-# e
+# ex
 on:
   push:
     branches: [ master ]
