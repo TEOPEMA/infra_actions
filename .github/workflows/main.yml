@@ -68,7 +68,7 @@ jobs:
         passphrase: ${{ secrets.PASSPHRASE }} # Если ваш ssh-ключ защищён фразой-паролем
         script: |
           # Выполняет pull образаff с DockerHub
-          sudo docker pull teopema/infra_acs
+          sudo docker pull teopema/infra_actions
           #остановка всех контейнеров
           sudo docker stop $(sudo docker ps -a -q)
-          sudo docker run --rm -d -p 5000:5000 teopema/infra_acs
+          sudo docker run --rm -d -p 5000:5000 teopema/infra_actions
